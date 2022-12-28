@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald|Montserrat|Source+Sans+Pro);
+
+body{
+    text-align: center;
+}
+/*Styling of Text Content*/
+.title-text{
+  font-family:'Oswald', sans-serif;
+  text-transform:uppercase;
+  font-size:55px;
+  letter-spacing:20px;
+  margin-top:-20px;
+  
+}
+
+.top-films, .text-2{
+  font-family: 'Montserrat', sans-serif;
+  padding:1%
+}
+.line-1{
+  border-bottom:3px solid #EFC94C;
+  width:200px;
+  margin:0 auto;
+  margin-bottom: 20px;
+}
+
+.text-4{
+  font-family: 'Oswald', sans-serif;
+  font-size:18px;
+  padding-top:25px;
+  color:#8F8164;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+
+.text-5{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size:20px;
+    padding-top: 40px;
+}
+.text-6{
+  font-family: 'Source Sans Pro', sans-serif;
+    font-size:16px;
+    padding:5%;
+    line-height:25px;
+    font-weight:500;
+}
+
+ul, li{
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height:24px;
+  padding:2px;
+  
+}
+
+/*Parallax Background*/
+.bg{
+   background: 
+    linear-gradient(
+      rgba(239, 201, 76, 0.20), 
+      rgba(239, 201, 157, 0.20)
+    ), url('https://variety.com/wp-content/uploads/2013/09/hayao-miyazaki.jpg') no-repeat fixed center;
+height: 400px;
+margin: 0 auto;
+padding: 250px 0;
+color: #fff;
+background-size:cover;
+}
+
+
+/*Front Back Card*/
+
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+
+  .parent img{
+      width: 95%;
+      height: 80%;
+      border-radius: 10px ;
+  }
+
+  .card {
+    perspective: 150rem;
+    position: relative;
+    height: 25rem;
+    margin: 2rem;
+    box-shadow: none;
+    background: none;
+    display: flex;
+
+  }
+
+
+  .card-side {
+    height: 20rem;
+    border-radius: 15px;
+    transition: all 0.8s ease;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    padding:2rem;
+    color: white
+  }
+  
+  .card-side.back {
+    transform: rotateY(-180deg);
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%,#C850C0 46%, #FFCC70 100%);
+  }
+  
+  .card-side.front {
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  }
+  
+  .card:hover .card-side.front {
+    transform: rotateY(180deg);
+  }
+  
+  .card:hover .card-side.back {
+    transform: rotateY(0deg);
+  }
+
+  #leftcard {
+    float: left;
+    width: 25%;
+  }
+  #middlecard {
+    float: left;
+    width: 25%;
+  }
+  #rightcard {
+    float: right;
+    width: 25%;
+  }
+
+  button:hover{
+    cursor: pointer;
+   }
+  
